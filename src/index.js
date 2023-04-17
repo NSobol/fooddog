@@ -1,17 +1,46 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// console.log("this is elem", document.getElementById("root"));
+
+// const elem = document.getElementById("root");
+// console.log({ elem });
+
+// const el = React.createElement("div", {}, "asdfasdfsadf");
+// console.log({ el });
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+// console.log({ root });
+
+// const element = <div>1stelemt</div>;
+
+// const list = (
+//   <ul>
+//     <li>1</li>
+//     <li>2</li>
+//     <li>4</li>
+//     <li>5</li>
+//   </ul>
+// );
+
+// function Example() {
+//   return <span>HELLO I am span</span>;
+// }
+// function NewEx(params) {
+//   return <h1>hhh</h1>;
+// }
+
+// const SecondEx = () => {
+//   return <div> div </div>;
+// };
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  // <div>
+  //   <Example />
+  //   <NewEx />
+  //   <SecondEx />
+  // </div>
+  <App />
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

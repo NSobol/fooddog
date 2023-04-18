@@ -1,6 +1,7 @@
 import React from 'react';
 import { Logo } from './../Logo/Logo.jsx';
 import { NavList } from '../NavList/NavList.jsx';
+import { Contacts } from '../Contakts/Contacts.jsx';
 import s from './Footer.module.css';
 
 export const Footer = (props) => {
@@ -16,11 +17,12 @@ export const Footer = (props) => {
       <div className={s.footer__wrapper}>
         <div className={s.footer__logo}>
           <Logo className='logo' />
-          <p className='copyright'>© «Интернет-магазин DogFood.ru»</p>
+          <p className={s.copyright}>© «Интернет-магазин DogFood.ru»</p>
         </div>
 
         <NavList list={ul1} />
         <NavList list={ul2} />
+        <Contacts />
       </div>
     </div>
   );
